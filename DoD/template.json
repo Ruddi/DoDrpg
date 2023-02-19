@@ -1,0 +1,248 @@
+{
+  "Actor": {
+    "types": ["character", "monster"],
+    "templates": {
+      "base": {
+        "armorClass": {
+          "value": 11,
+          "label": "DoDrpg.ArmorClass",
+          "abbr": "DoDrpg.ArmorClassAbbr"
+        },
+        "attackBonus": {
+          "value": 1,
+          "label": "DoDrpg.AttackBonus",
+          "abbr": "DoDrpg.AttackBonusAbbr"
+        },
+        "biography": "",
+        "hitPoints": {
+          "value": 10,
+          "max": 10,
+          "label": "DoDrpg.HitPoints",
+          "abbr": "DoDrpg.HitPointsAbbr"
+        },
+        "initBonus": {
+          "value": 0,
+          "label": "DoDrpg.InitiativeBonus"
+        },
+        "move": {
+          "value": 30,
+          "label": "DoDrpg.Movement"
+        },
+        "saves": {
+          "death": {
+            "value": 13
+          },
+          "wands": {
+            "value": 14
+          },
+          "paralysis": {
+            "value": 15
+          },
+          "breath": {
+            "value": 16
+          },
+          "spells": {
+            "value": 18
+          }
+        }
+      }
+    },
+    "character": {
+      "templates": ["base"],
+      "abilities": {
+        "str": {
+          "value": 10
+        },
+	"siz": {
+          "value": 10
+        },
+	"siz": {
+          "value": 10
+        },
+        "int": {
+          "value": 10
+        },
+        "wis": {
+          "value": 10
+        },
+        "dex": {
+          "value": 10
+        },
+        "con": {
+          "value": 10
+        },
+        "cha": {
+          "value": 10
+        }
+      },
+      "age": {
+        "value": "",
+        "label": "DoDrpg.Age"
+      },
+      "class": {
+        "value": "",
+        "label": "DoDrpg.Class"
+      },
+      "race": {
+        "value": "",
+        "label": "DoDrpg.Race"
+      },
+      "sex": {
+        "value": "",
+        "label": "DoDrpg.Sex"
+      },
+      "level": {
+        "value": 1,
+        "label": "DoDrpg.Level"
+      },
+      "money": {
+        "pp": {
+          "value": 0
+        },
+        "gp": {
+          "value": 0
+        },
+        "ep": {
+          "value": 0
+        },
+        "sp": {
+          "value": 0
+        },
+        "cp": {
+          "value": 0
+        }
+      },
+      "spellsPerLevel": {
+        "value": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        "label": "DoDrpg.SpellsPerLevel"
+      },
+      "xp": {
+        "value": 0,
+        "next": 2000,
+        "label": "DoDrpg.ExperiencePoints",
+        "abbr": "DoDrpg.ExperiencePointsAbbr"
+      }
+    },
+    "monster": {
+      "templates": ["base"],
+      "hitDice": {
+        "size": "d8",
+        "number": 1,
+        "mod": 0,
+        "label": "DoDrpg.HitDice",
+        "abbr": "DoDrpg.HitDiceAbbr"
+      },
+      "morale": {
+        "value": 7,
+        "label": "DoDrpg.Morale"
+      },
+      "numberAppearing": {
+        "value": "1d4",
+        "label": "DoDrpg.NumberAppearing"
+      },
+      "specialAbility": {
+        "value": 0,
+        "label": "DoDrpg.SpecialAbility"
+      },
+      "treasureType": {
+        "value": "None",
+        "label": "DoDrpg.TreasureType"
+      },
+      "xp": {
+        "value": 0,
+        "label": "DoDrpg.ExperiencePoints",
+        "abbr": "DoDrpg.ExperiencePointsAbbr"
+      }
+    }
+  },
+  "Item": {
+    "types": ["item", "weapon", "armor", "spell", "feature"],
+    "templates": {
+      "base": {
+        "description": ""
+      },
+      "valuable": {
+        "price": {
+          "value": "",
+          "label": "DoDrpg.Price"
+        },
+        "weight": {
+          "value": 1,
+          "label": "DoDrpg.Weight"
+        }
+      }
+    },
+    "item": {
+      "templates": ["base", "valuable"],
+      "quantity": {
+        "value": 1,
+        "label": "DoDrpg.Quantity"
+      }
+    },
+    "weapon": {
+      "templates": ["base", "valuable"],
+      "bonusAb": {
+        "value": 0,
+        "label": "DoDrpg.BonusAttackBonus"
+      },
+      "damage": {
+        "value": "1d6",
+        "label": "DoDrpg.Damage",
+        "abbr": "DoDrpg.DamageAbbr"
+      },
+      "range":{
+        "value": "Melee",
+        "label": "DoDrpg.Range"
+      },
+      "size": {
+        "value": "M",
+        "label": "DoDrpg.Size"
+      }
+    },
+    "armor": {
+      "templates": ["base", "valuable"],
+      "armorClass": {
+        "value": 11,
+        "label": "DoDrpg.ArmorClass",
+        "abbr": "DoDrpg.ArmorClassAbbr"
+      }
+    },
+    "spell": {
+      "templates": ["base"],
+      "class": {
+        "value": "",
+        "label": "DoDrpg.Class"
+      },
+      "duration": {
+        "value": "",
+        "label": "DoDrpg.Duration"
+      },
+      "prepared": {
+        "value": 0,
+        "label": "DoDrpg.Prepared"
+      },
+      "range": {
+        "value": "",
+        "label": "DoDrpg.Range"
+      },
+      "spellLevel": {
+        "value": 1,
+        "label": "DoDrpg.SpellLevel"
+      }
+    },
+    "feature": {
+      "templates": ["base"],
+      "formula": {
+        "value": "d100",
+        "label": "DoDrpg.Formula"
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "DoD",
+  "title": "Dragar och Demoner",
+  "description": "Dragar och Demoner for FoundryVTT!",
+  "version": "r1",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10",
+    "maximum": "10"
+  },
+  "authors": [
+    {
+      "name": "Rovb",
+      "email": "ruddi.bodholdt.dal@gmail.com",
+      "discord": "a;#9662"
+    }
+  ],
+  "esmodules": ["module/DoDrpg.mjs"],
+  "styles": ["styles/DoDrpg.css"],
+  "scripts": [],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 5,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "hitPoints",
+  "secondaryTokenAttribute": null,
+  "url": "https://github.com/ruddi/DoDrpg",
+  "manifest": "https://raw.githubusercontent.com/ruddi/DoDrpg/main/system.json",
+  "download": "https://github.com/ruddi/DoDrpg/archive/refs/tags/r1.zip",
+  "license": "LICENSE.txt"
+}
