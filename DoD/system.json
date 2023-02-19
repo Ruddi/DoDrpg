@@ -31,7 +31,7 @@
   "primaryTokenAttribute": "hitPoints",
   "secondaryTokenAttribute": null,
   "url": "https://github.com/Ruddi/DoDrpg/tree/main/DoD",
-  "manifest": "https://github.com/Ruddi/DoDrpg/tree/main/DoD/system.json",
-  "download": "https://github.com/Ruddi/DoDrpg/tree/main/DoD/archive/refs/tags/r1.zip",
+  "manifest": "https://raw.githubusercontent.com/Ruddi/DoDrpg/main/DoD/system.json",
+  "download": "https://github.com/Ruddi/DoDrpg/archive/refs/heads/main.zip",
   "license": "LICENSE.txt"
 }
